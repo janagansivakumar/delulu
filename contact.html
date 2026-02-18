@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - PSGCAS Euphoria</title>
+  <!-- Elegant fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'EB Garamond', serif;
+      background: linear-gradient(180deg, #0a1a1a 0%, #0f2f3f 100%);
+      color: #87CEEB; /* sky blue */
+    }
+
+    /* Navigation bar */
+    nav {
+      background: rgba(0,0,0,0.85);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      border-bottom: 2px solid #c0c0c0;
+    }
+    nav a {
+      color: #87CEEB;
+      text-decoration: none;
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-shadow: 0 0 10px #87CEEB;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 3rem;
+      color: #c0c0c0;
+      text-shadow: 0 0 15px #c0c0c0, 0 0 25px #87CEEB;
+    }
+
+    /* Contact grid */
+    .contact-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(0,0,0,0.75);
+      border: 2px solid #c0c0c0;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #87CEEB, inset 0 0 40px #c0c0c0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: rgba(0,0,0,0.6);
+      border: 1px solid #c0c0c0;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px #87CEEB;
+    }
+
+    .contact-card h3 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #c0c0c0;
+    }
+
+    .contact-card p {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #87CEEB;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="images/templates/register.html">Register</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Contact Our Organizers</h1>
+  </header>
+
+  <!-- Contact Section -->
+  <div class="contact-container">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Ashwin R</h3>
+        <p>📞 +91 98765 43210</p>
+      </div>
+      <div class="contact-card">
+        <h3>chairperson 2</h3>
+        <p>📞 +91 91234 56789</p>
+      </div>
+      <div class="contact-card">
+        <h3>chair person 3</h3>
+        <p>📞 +91 99887 77665</p>
+      </div>
+      <div class="contact-card">
+        <h3>chair person 4</h3>
+        <p>📞 +91 90909 80808</p>
+      </div>
+    </div>
+  </div>
+ 
+</body>
+</html>

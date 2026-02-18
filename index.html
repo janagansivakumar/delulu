@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - PSGCAS Euphoria</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="stylee.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #0a1a1a 0%, #0f2f3f 100%);
+      font-family: 'EB Garamond', serif;
+      color: #87CEEB; /* sky blue theme */
+    }
+
+    /* Smoky overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.7) 100%);
+      pointer-events: none;
+      z-index: -1;
+      animation: smokeDrift 20s infinite alternate;
+    }
+
+    @keyframes smokeDrift {
+      0% { transform: translateX(0) translateY(0); opacity: 0.5; }
+      50% { transform: translateX(-30px) translateY(20px); opacity: 0.7; }
+      100% { transform: translateX(30px) translateY(-20px); opacity: 0.5; }
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+  .euphoria-title {
+  font-family: 'Pirata One', cursive; /* pirate-style font */
+  font-size: 6rem; /* large and dramatic */
+  color: #c0c0c0; /* silver */
+  text-shadow: 0 0 15px #c0c0c0, 0 0 25px #87CEEB; /* glowing effect */
+  animation: pirateFade 5s ease-in-out  alternate;
+}
+
+@keyframes pirateFade {
+  0% { opacity: 0; transform: translateY(-20px) rotate(-5deg); }
+  50% { opacity: 1; transform: translateY(0) rotate(0deg); }
+  100% { opacity: 0.7; transform: translateY(20px) rotate(5deg); }
+}
+
+
+header {
+  position: fixed; /* keeps header fixed at top */ 
+  top: 0;
+  left: 0; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, nav right */
+  padding: 10px 20px;
+  background: rgba(10,20,20,0.9);
+  box-shadow: 0 2px 15px rgba(0,0,0,0.9);
+  position:relative;
+}
+
+.logo {
+  flex: 1; /* left column */
+}
+.logo img {
+  height: 60px;
+}
+
+.psg {
+  flex: 2; /* center column */
+  text-align: center;
+}
+.psg h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2rem; /* reduced size */
+  margin: 0;
+  color: #c0c0c0;
+}
+.psg h3 {
+  margin: 3px 0 0;
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
+  color: #87CEEB;
+  font-size: 1rem;
+}
+
+nav {
+  flex: 1; /* right column */
+  text-align: right;
+}
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.1rem;
+  color: #c0c0c0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+nav ul li a:hover {
+  color: #87CEEB;
+  text-shadow: 0 0 10px #c0c0c0, 0 0 20px #87CEEB;
+}
+
+
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: rgba(0, 0, 0, 0.85);
+      color: #c0c0c0;
+      background-image: url('imgages/sparrow.png'), url('imgages/download (11).png');
+      background-position: left, right;
+      background-size: contain, contain;
+      background-repeat: no-repeat, no-repeat;
+    }
+
+    .hero h1 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 2.5rem;
+      color: #87CEEB;
+    }
+
+    .hero h3 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.5rem;
+      margin: 10px 0;
+      color: #87CEEB;
+    }
+
+    .stranger-title {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 6rem;
+      margin: 20px 0;
+      color: #c0c0c0;
+      text-shadow: 0 0 15px #c0c0c0, 0 0 25px #87CEEB;
+      animation: pirateFade 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes pirateFade {
+      0% { opacity: 0; transform: translateY(-20px); }
+      50% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0.7; transform: translateY(20px); }
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #87CEEB;
+    }
+
+    .hero a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #c0c0c0;
+      color: #0a1a1a;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hero a:hover {
+      background: #87CEEB;
+      color: #000;
+      box-shadow: 0 0 15px #87CEEB;
+    }
+    .nav{
+      margin-left:50%;
+    }
+
+    footer {
+      background: rgba(20,20,20,0.95);
+      color: #87CEEB;
+      text-align: center;
+      padding: 15px;
+      text-shadow: 0 0 8px #87CEEB;
+    }
+    .carousel-inner img {
+  height: 300px;       /* reduce height */
+  object-fit: cover;   /* crop nicely */
+}
+.logo2{
+  height:50px;
+  width:50px;
+}
+.euphoria{
+  height:500px;
+  width:400px;
+}
+
+  </style>
+</head>
+<body>
+ <header>
+  <div class="logo">
+    <img src="imgages/lgg.png" alt="Logo">
+  </div>
+  <div class="psg">
+    <h1>PSG COLLEGE OF ARTS & SCIENCE</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+  <section class="hero">
+    <div>
+      <img src='imgages/kkk.png' class="logo2">
+      <h1>MANAVAR MANRAM-SF</h1>
+      <h3>Presents</h3>
+      <img src='imgages/Remove background project (4).png' class="euphoria">
+      <br>
+
+      <a href="events.html">Explore Events</a>
+    </div>
+  </section>
+  <section style="background-color:rgb(252, 254, 255)">
+    <h1 style="text-align: center; margin-top: 10px;">Glimpses</h1>
+  <div class="container my-4">
+  <div id="carouselExampleAutoplaying" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width:600px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imgages/background1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imgages/background2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imgages/download (9).jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2026 PSGCAS Euphoria Fest</p>
+  </footer>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "euphoria",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000E\u0000U\u0000P\u0000H\u0000O\u0000R\u0000I\u0000A\u0000_\u00002\u00006\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janagansivakumar/EUPHORIA_26.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/janagansivakumar/EUPHORIA_26/issues"
+  },
+  "homepage": "https://github.com/janagansivakumar/EUPHORIA_26#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "ejs": "^4.0.1",
+    "exceljs": "^4.4.0",
+    "express": "^5.2.1"
+  }
+}
